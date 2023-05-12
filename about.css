@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(UAD.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar .account{
+    font-family: sans-serif;
+    text-align: center;
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff7300;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.head{
+    text-align: center;
+    margin: 75px;
+    font-size: 70px;
+}
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-top: 60px;
+    width: 2500px;
+    padding: 50px;
+    border-radius: 15px;
+    left: 50%;
+}
+.anggota{
+    display: flex;
+}
+.isi_anggota{
+    margin: 0px;
+    padding-left: 250px;
+}
+.foto_anggota{
+    width: 200px;
+    height: 250px;
+    border-radius: 150px;
+}
+.bio{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+.isi_support{
+    margin: 0px;
+    padding-left: 550px;
+}
