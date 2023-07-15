@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPM | Home</title>
+    <link rel="icon" href="../IMG/Main_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img class="logo" src="../IMG/WPM_Logo_WhiteText.png" alt="WPM (Website Presensi Mahasiswa)"></a>
+            <nav>
+                <a href="Home_page.php">Home</a> 
+                <a href="Presence_page.php">Presence</a>
+                <a href="Data_page.php">Data</a>
+                <a href="about-us.html">About us</a>
+                <a href="contact.html">Contact</a>
+                <a href="Function/logout.php">Log out</a>
+                <div class="animation start-home"></div>
+            </nav>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <section class="home">
+        <div class="content">
+            <h1>WPM.<br><span>Website Presensi Mahasiswa</span></h1>
+            <P>Selamat datang di Website Presensi Mahasiswa!
+
+    Menjadi mahasiswa adalah perjalanan yang luar biasa. Di sinilah kalian memulai petualangan akademik dan mengejar impian kalian. Website Presensi Mahasiswa (WPM) hadir untuk mempermudah proses presensi dan melengkapi pengalaman kalian sebagai mahasiswa.
+    
+    Dengan WPM, kalian dapat dengan mudah mencatat kehadiran dalam setiap kuliah, seminar, atau kegiatan kampus lainnya. Tidak perlu lagi repot dengan catatan manual yang bisa hilang atau tercecer. WPM memberikan kenyamanan dan efisiensi dalam mengelola presensi, sehingga kalian bisa fokus pada apa yang paling penting: belajar dan berkontribusi di kelas.
+    
+    </P>
+            <a href="#">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+</body>
+</html>
