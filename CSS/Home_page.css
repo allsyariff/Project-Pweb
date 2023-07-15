@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background: rgb();
+    min-height: 200vh;
+    background: url(../IMG/about_us.webp);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    color: rgba(255, 255, 255);
+    background-color: rgb(08, 24, 48, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 50px;
+    z-index: 100000;
+}
+header.sticky{
+    padding: 5px 100px;
+    background-color: rgb(08, 24, 48, 0.6);
+}
+
+header .logo{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header .nav ul li a{
+    position: relative;
+    margin: 0 15px;
+    letter-spacing: 2px;    
+    transition: 0.6s;
+}
+
+nav{
+	position: relative;
+	margin: 0;
+	width: 665px;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #1abc9c;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 125px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 125px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 225px;
+}
+nav a:nth-child(4){
+	width: 110px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 110px;
+	left: 325px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 435px;
+}
+nav a:nth-child(6){
+	width: 110px;
+}
+nav a:nth-child(6):hover~.animation{
+	width: 110px;
+	left: 555px;
+}
+header.sticky ul li a {
+    color: #ffff;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../IMG/UAD.jpeg);
+    background-color: rgb(08, 24, 48, 0.6);
+    background-size: cover;
+
+}

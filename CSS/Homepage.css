@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+header{
+    color: rgba(255, 255, 255);
+    background-color: rgb(08, 24, 48, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 50px;
+    z-index: 100000;
+}
+header.sticky{
+    padding: 5px 100px;
+    background-color: rgb(08, 24, 48, 0.6);
+}
+
+header .logo{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header .nav ul li a{
+    position: relative;
+    margin: 0 15px;
+    letter-spacing: 2px;    
+    transition: 0.6s;
+}
+
+nav{
+	position: relative;
+	margin: 0;
+	width: 665px;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #1abc9c;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 125px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 125px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 225px;
+}
+nav a:nth-child(4){
+	width: 110px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 110px;
+	left: 325px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 435px;
+}
+nav a:nth-child(6){
+	width: 110px;
+}
+nav a:nth-child(6):hover~.animation{
+	width: 110px;
+	left: 555px;
+}
+header.sticky ul li a {
+    color: #ffff;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../IMG/UAD.jpeg);
+    background-color: rgb(08, 24, 48, 0.6);
+    background-size: cover;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.6)),url(../IMG/UAD.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    padding-left: 45px;
+    height: 80px;
+    padding-right: 25px;
+    background-color: rgba(0, 58, 100, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar-scrolled{
+    background-color: rgba(0, 58, 100, 1);
+    height: 60px;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696e9;
+}
+
+.home .content{
+    z-index: 888;
+    color: #ffff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home .content p{
+    margin-bottom: 65px;
+}
+
+.home .content a{
+    background: #ffff;
+    padding: 15px 35px;
+    color: #1680ac;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.home .media-icons a{
+    color: #ffff;
+    font-size: 1.6em;
+}
+
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+@media (max-width: 1040px){
+    
+}
